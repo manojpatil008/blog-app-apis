@@ -1,0 +1,61 @@
+1. Structured the Database
+User - user_id, name, email, about, password
+Post - post_id, title, content, image, user_id, category_id
+Comment - comment_id, user_id, comment, post_id
+Category - category_id, title
+Role - role_id, role_name
+
+2. Created the Packages (Layered Architecture):
+Controllers
+Services
+Repositories
+Utils
+Exceptions
+Payloads - DTO class
+Config
+Entities
+
+
+3. DB configurations in application properties
+
+4. User Entity class
+	user_id, name, email, about, password
+	COnstructor, getter and setter
+
+5. Repository Interface (JpaRepository)
+
+6. UserDto
+	user_id, name, email, about, password
+	COnstructor, getter and setter
+
+7. UserService interface for User class
+	Added methods for CURD operations
+
+8. UserServiceImpl Implementation class for UserService interface
+	Implemented all the method for CURD operations
+	Implemented the method to map User class to UserDto class and vice versa 
+
+9. Created custom Exception ResourceNotFoundException class
+	To throw the exception
+
+10. Created the UserController class for handling API's
+	according to mapping of API's implemented methods by calling the methods from UserServiceImpl
+
+11. Tested the APIS from Postman
+
+12. Exception handled globally using @RestControllerAdvice and @ExceptionHandler()
+
+13. Removed manual mapping of User to UserDto and vice versa and used ModelMapper class 
+
+
+
+
+
+
+
+
+
+
+
+
+
