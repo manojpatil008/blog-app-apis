@@ -1,0 +1,26 @@
+Entity - Comment
+	id, content, post	
+			there can be many comments in one post
+
+Post - List of comments
+		in one post there can we many comments
+
+
+PostDto - List of comments
+
+
+CommentDto - 
+	id, content
+
+
+CommentRepo 
+
+CommentService -
+	CreateComment, deleteComment
+
+CommentServiceImpl - 
+	CreateComment (commentDto, postId)
+	deleteComment(commentId)
+
+
+CommentController  

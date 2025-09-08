@@ -22,11 +22,11 @@ Entities
 	user_id, name, email, about, password
 	COnstructor, getter and setter
 
-5. Repository Interface (JpaRepository)
-
-6. UserDto
+5. UserDto
 	user_id, name, email, about, password
 	COnstructor, getter and setter
+
+6. Repository Interface (JpaRepository)
 
 7. UserService interface for User class
 	Added methods for CURD operations
@@ -47,8 +47,14 @@ Entities
 
 13. Removed manual mapping of User to UserDto and vice versa and used ModelMapper class 
 
+14. Added the Validation to incoming DTO
+
+15. Added the security dependency in pom.xml
+	Which made all the API's private that no one can access without authentication
+	Created the User "user" and provided the password in console
 
 
+16. Added the security properties in application.properties
 
 
 
